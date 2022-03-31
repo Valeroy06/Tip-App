@@ -4,48 +4,61 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <link rel="stylesheet" href="/sass.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&family=Space+Mono:wght@700&display=swap"
+        rel="stylesheet">
     <title>Tip App</title>
 </head>
 
 <body>
-    <img src="/img/split-tier.svg" alt="split-tier">
-    <section>
-        <div>
-            <div>
+    <img src="/img/split-tier.svg" id="split" alt="split-tier">
+    <section class="container">
+        <div class="bill">
+            <div class="doll">
                 <span>Bill</span><br>
                 <img src="/img/dollar.svg" alt="dollar">
-                <input type="number" name="number" placeholder="0">
+                <input type="number" id="number" placeholder="0">
             </div>
-            <div>
-                <span>Select Tip %</span><br>
-                <button>5%</button>
-                <button>10%</button>
-                <button>15%</button>
-                <button>25%</button>
-                <button>50%</button>
-                <input type="number" name="" placeholder="Custom">
+            <div class="tip">
+                <span>Select Tip %</span>
+                <div class="grid">
+                    <button>5%</button>
+                    <button>10%</button>
+                    <button>15%</button>
+                    <button>25%</button>
+                    <button>50%</button>
+                    <input type="number" id="Custom" placeholder="Custom">
+                </div>
             </div>
-            
-            <div>
-                <span>Number Of People</span><br>
+
+            <div class="People">
+                <span id="nom">Number Of People</span><br>
                 <img src="/img/person.svg" alt="person">
-                <input type="number" name="" placeholder="0">
+                <input type="number" id="nomb" placeholder="0">
             </div>
         </div>
-        <div>
-            <div>
-                <span>Tip Amount</span>
-                <img src="/img/dollar.svg" alt="">
-                <input type="number" name="" placeholder="0.0"><br>
-                <small>/person</small>
+        <div class="amount">
+            <div class="flex">
+                <div>
+                    <span>Tip Amount</span><br>
+                    <small>/person</small>
+                </div>
+                <div class="dolles">
+                    <h2>$0.0</h2>
+                </div>
             </div>
-            <div>
-                <span>Total Amount</span>
-                <img src="/img/dollar.svg" alt="">
-                <h2>0.0</h2>
-                <small>/person</small>
+            <div class="flex">
+                <div class="tots">
+                    <span>Total Amount</span><br>
+                    <small>/person</small>
+                </div>
+                <div class="dolls">
+                    <h2>$0.0</h2>
+                </div>
             </div>
+            <button id="reset" type="reset">RESET</button>
         </div>
     </section>
 

@@ -4,4 +4,140 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
 }
+
+body {
+  background-color: #c5e4e7;
+  font-family: "Space Mono";
+}
+
+#split {
+  text-align: center;
+}
+
+.container {
+  background-color: white;
+}
+
+.container .bill {
+  padding: 20px;
+}
+
+.container .bill .doll #number {
+  padding: 10px 20px;
+  text-align: right;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.container .bill .doll img {
+  position: absolute;
+  top: 114px;
+  left: 30px;
+}
+
+.container .bill .tip {
+  padding-top: 10px;
+}
+
+.container .bill .tip .grid {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 15px;
+  -ms-grid-columns: 150px 150px;
+      grid-template-columns: 150px 150px;
+  -ms-grid-rows: auto auto auto;
+      grid-template-rows: auto auto auto;
+  padding: 15px 0;
+}
+
+.container .bill .tip button {
+  padding: 10px 0;
+  border-radius: 5px;
+  font-family: 'Space Mono';
+}
+
+.container .bill .tip #Custom {
+  text-align: right;
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+.container .bill .People #nomb {
+  padding: 10px 20px;
+  text-align: right;
+  width: 95%;
+  border-radius: 5px;
+}
+
+.container .bill .People img {
+  position: absolute;
+  top: 390px;
+  left: 30px;
+}
+
+.container .amount {
+  background-color: #00494d;
+  margin: 20px;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.container .amount span {
+  color: white;
+}
+
+.container .amount small {
+  color: #7f9c9f;
+}
+
+.container .amount .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .amount .tots {
+  padding: 20px 0;
+}
+
+.container .amount #reset {
+  padding: 10px 125px;
+  margin: 20px 0;
+  background-color: #00494d;
+  border-radius: 5px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .container {
+    border-radius: 10px;
+    margin: 110px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 60vh;
+  }
+  .doll img {
+    position: absolute !important;
+    top: 33.5% !important;
+    left: 29% !important;
+  }
+  .tip .grid {
+    -ms-grid-columns: 500px auto auto;
+        grid-template-columns: 500px auto auto;
+    -ms-grid-rows: auto auto;
+        grid-template-rows: auto auto;
+  }
+}
 /*# sourceMappingURL=sass.css.map */
