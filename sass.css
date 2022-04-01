@@ -16,6 +16,7 @@ body {
 
 .container {
   background-color: white;
+  border-radius: 20px;
 }
 
 .container .bill {
@@ -27,11 +28,12 @@ body {
   text-align: right;
   width: 95%;
   border-radius: 5px;
+  font-family: "Space Mono";
 }
 
 .container .bill .doll img {
   position: absolute;
-  top: 114px;
+  top: 118px;
   left: 30px;
 }
 
@@ -67,17 +69,18 @@ body {
   text-align: right;
   width: 95%;
   border-radius: 5px;
+  font-family: "Space Mono";
 }
 
 .container .bill .People img {
   position: absolute;
-  top: 390px;
+  top: 412px;
   left: 30px;
 }
 
 .container .amount {
   background-color: #00494d;
-  margin: 20px;
+  margin: 0 20px;
   border-radius: 10px;
   padding: 20px;
 }
@@ -102,6 +105,18 @@ body {
           align-items: center;
 }
 
+.container .amount .flexi {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .container .amount .tots {
   padding: 20px 0;
 }
@@ -111,12 +126,12 @@ body {
   margin: 20px 0;
   background-color: #00494d;
   border-radius: 5px;
+  font-family: "Space Mono";
 }
 
 @media only screen and (min-width: 1000px) {
   .container {
-    border-radius: 10px;
-    margin: 110px;
+    margin: 110px 400px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -130,14 +145,30 @@ body {
   }
   .doll img {
     position: absolute !important;
-    top: 33.5% !important;
+    top: 36.5% !important;
     left: 29% !important;
   }
+  .doll #number {
+    width: 100% !important;
+  }
   .tip .grid {
-    -ms-grid-columns: 500px auto auto;
-        grid-template-columns: 500px auto auto;
-    -ms-grid-rows: auto auto;
-        grid-template-rows: auto auto;
+    -ms-grid-columns: 100px 100px 100px !important;
+        grid-template-columns: 100px 100px 100px !important;
+  }
+  .People img {
+    position: absolute !important;
+    top: 68.5% !important;
+    left: 29% !important;
+  }
+  .People #nomb {
+    width: 100% !important;
+  }
+  .amount .flex {
+    margin: 20px 0;
+  }
+  .amount .flexi {
+    margin-top: 0px;
+    margin-bottom: 80px;
   }
 }
 /*# sourceMappingURL=sass.css.map */
